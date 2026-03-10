@@ -1,0 +1,68 @@
+.form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* light overlay for readability */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.form-container .message {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #f44336; /* red for error */
+}
+
+.form-container .message.success {
+  background-color: #4caf50; /* green for success */
+}

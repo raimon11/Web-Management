@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dfa8a2, #c22b1b);
+}
+
+/* Main Container */
+.container {
+  width: 900px;
+  height: 500px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Left Side Image */
+.left {
+  width: 50%;
+  background-image: url("../assets/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 50px;
+  position: relative;
+}
+
+/* Overlay Text */
+.left::before {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  width: 70%;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Right Login Form */
+.right {
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 6px rgba(102, 126, 234, 0.5);
+}
+
+/* Button */
+button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Footer */
+.footer {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #777;
+  text-align: center;
+}
