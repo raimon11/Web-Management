@@ -15,10 +15,10 @@ if (!isset($_SESSION['user_id'])) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>COZIEST</title>
-<link rel="stylesheet" href="./styles/design.css">
+<link rel="stylesheet" href="./styles/index.css">
 <link rel="stylesheet" href="./styles/forms.css">
 </head>
-<body>
+<body class="dashboard-page">
 
 <div class="dashboard">
     <?php require 'sidebar.php'; ?>
